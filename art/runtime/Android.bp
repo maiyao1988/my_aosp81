@@ -217,6 +217,7 @@ cc_defaults {
         "utf.cc",
         "utils.cc",
         "vdex_file.cc",
+        "my_hack.cc",
         "verifier/instruction_flags.cc",
         "verifier/method_verifier.cc",
         "verifier/reg_type.cc",
