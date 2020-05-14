@@ -1325,6 +1325,9 @@ class Dex2Oat FINAL {
         Usage("Unknown argument %s", option.data());
       }
     }
+    
+    // force setting --compiler-filter=verify
+    compiler_options_.get()->SetCompilerFilter(CompilerFilter::kVerify);
 
     ProcessOptions(parser_options.get());
 

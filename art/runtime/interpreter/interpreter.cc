@@ -234,7 +234,7 @@ enum InterpreterImplKind {
   kMterpImplKind          // Assembly interpreter
 };
 
-static constexpr InterpreterImplKind kInterpreterImplKind = kMterpImplKind;
+static constexpr InterpreterImplKind kInterpreterImplKind = kSwitchImplKind;
 
 static inline JValue Execute(
     Thread* self,

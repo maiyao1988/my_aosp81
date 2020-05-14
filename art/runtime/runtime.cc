@@ -1215,6 +1215,9 @@ bool Runtime::Init(RuntimeArgumentMap&& runtime_options_in) {
     jit_options_->SetUseJitCompilation(false);
     jit_options_->SetSaveProfilingInfo(false);
   }
+    // always disable jit
+  jit_options_->SetUseJitCompilation(false);
+  jit_options_->SetSaveProfilingInfo(false);
 
   // Use MemMap arena pool for jit, malloc otherwise. Malloc arenas are faster to allocate but
   // can't be trimmed as easily.
